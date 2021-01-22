@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <img src ="assets/login.png"/>
+      </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+
+        <ion-card>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">UserId</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <div margin-vertical text-right>
+              <ion-button color="primary">
+                <ion-icon name="log-in-outline"></ion-icon>Sign-in
+              </ion-button>
+              <ion-button color="secondary" routerLink="/register">
+                <ion-icon name="person-add-outline"></ion-icon>Sign-up
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
