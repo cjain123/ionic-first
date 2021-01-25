@@ -7,8 +7,8 @@
 
 <ion-content>
   <div id="header">
-    <img src ="assets/login.png"/>
-      </div>
+    <img src="assets/login.png" />
+  </div>
   <ion-grid>
     <ion-row>
       <ion-col size-md="6" offset-md="3">
@@ -17,15 +17,15 @@
           <ion-card-content>
             <ion-item>
               <ion-label position="floating">UserId</ion-label>
-              <ion-input></ion-input>
+              <ion-input type="text" [(ngModel)]="email"></ion-input>
             </ion-item>
 
             <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input type="Password" [(ngModel)]="password"></ion-input>
             </ion-item>
             <div margin-vertical text-right>
-              <ion-button color="primary">
+              <ion-button color="primary" (click)="UserLog()">
                 <ion-icon name="log-in-outline"></ion-icon>Sign-in
               </ion-button>
               <ion-button color="secondary" routerLink="/register">

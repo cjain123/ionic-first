@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-title>Dashboard</ion-title>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/users-list">back</ion-back-button>
+    </ion-buttons>
+
+    <button class="btn btn-danger" text-right (click)="Logout()">
+      <h6>
+        <ion-icon name="log-out"></ion-icon>
+      </h6>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div class="card" style="width: 50rem;">
+      <div class="card-body">
+        <tr>Token-Id = {{data}}</tr><br />
+        <tr>Total Number Of Users = {{Total}}</tr><br />
+        <a routerLink="/users-list" class="btn btn-primary">Go To Users-List</a>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
